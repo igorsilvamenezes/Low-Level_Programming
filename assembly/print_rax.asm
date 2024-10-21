@@ -36,6 +36,7 @@ _start:
     ; consulte a documentação do comando 'test'
     test rcx, rcx
     jnz .loop
+    
     mov rax, 60 ; faz a chamada de sistema 'exit'
     xor rdi, rdi
     syscall
